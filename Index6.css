@@ -1,0 +1,128 @@
+/*.head, .left-sidebar, .right-sidebar, .content, .footer {
+    border: 0.5px solid black;
+    box-shadow: 3px 3px 3px grey; 
+    border-radius: 10px;
+}*/
+#container {/* Произвольное название, место для других элементов*/
+    max-width: 1900px;/*максимальная ширина сайта, в этом примере минимальной нет*/
+    margin: 0 auto;/* выравнивает блок по центру. сли вы указали width для объекта, 
+                     к которому вы применили margin: 0 auto , объект будет находиться 
+                     в центре родительского контейнера.
+                     Указание auto в качестве второго параметра в основном говорит 
+                     браузеру автоматически определять левое и правое поля самостоятельно,
+                      что он и делает, устанавливая их одинаково. Это гарантирует, 
+                      что левое и правое поля будут иметь одинаковый размер. 
+                      Первый параметр 0 указывает, что верхнее и нижнее поля будут равны 0. */
+    width: 100%; /*длина на всю страницу*/
+  }
+  
+  .head {
+    background: #e3e8cc;/*Цвет фона, сокращение от background-color*/
+    text-align: center;  /*Выравнивает текст в центре*/
+    border: 0.5px solid black;/*Граница. 3 параметра: Толщина непрерывный/пунктир цвет*/
+    box-shadow: 3px 3px 3px grey; /* Тень от элемента. 3 координаты(длина и цвет)*/
+    border-radius: 10px; /*Радиус скругления границы*/
+    margin-bottom: 10px; /*Внешний отступ снизу*/
+    background: url("1.jpg");/*Фоновое изображение. сокращение от background-image: ;*/
+    color: rgb(245, 236, 236);/*цвет текста*/
+  }
+  
+  .left-sidebar {
+    background: #e3e8cc; /*Цвет фона, сокращение от background-color*/
+    background: url("banner2.svg");
+       float: left; /*Определяет, по какой стороне будет выравниваться элемент, 
+                   при этом остальные элементы будут обтекать его с других сторон*/
+    height: 800px; /*Высота*/
+    width: 20.5%;  /*длина*/
+    border: 0.5px solid black; /*Граница. 3 параметра: Толщина непрерывный/пунктир цвет*/
+    box-shadow: 3px 3px 3px grey;  /*Тень от элемента. 3 координаты(длина и цвет)*/
+    border-radius: 10px; /*Радиус скругления границы*/
+    opacity: 0.8;/*Прозрачность*/
+  }
+  
+  .right-sidebar {
+    color: rgb(245, 236, 236);/*цвет текста*/
+    float: right; /*Определяет, по какой стороне будет выравниваться элемент, 
+                    при этом остальные элементы будут обтекать его с других сторон*/
+    height: 800px; /*Высота*/
+    width: 20.5%; /*Длина*/
+    border: 0.5px solid black; /*Граница. 3 параметра: Толщина непрерывный/пунктир цвет*/
+    box-shadow: 3px 3px 3px grey;  /*Тень от элемента. 3 координаты(длина и цвет)*/
+    border-radius: 10px; /*Радиус скругления границы*/
+    background: url("1.jpg");/*Фоновое изображение. сокращение от background-image: ;*/
+  }
+  
+  .content {
+    background: #e3e8cc; /*цвет фона*/
+    margin: 0 22%; /*Внешний отступ, здесь по двум параметрам: вверх и вправо */
+    height: 800px; /*высота*/
+    width: 56%; /*ширина*/
+    border: 0.5px solid black; /*Граница. 3 параметра: Толщина непрерывный/пунктир цвет*/
+    box-shadow: 3px 3px 3px grey;  /*Тень от элемента. 3 координаты(длина и цвет)*/
+    border-radius: 10px; /*Радиус скругления границы*/
+    
+  }
+  
+  .footer {
+    background: #e3e8cc; /*цвет фона*/
+    color: rgb(245, 236, 236);/*цвет текста*/
+    text-align: center; /*Выравнивает текст в центре*/
+    border: 0.5px solid black; /*Граница. 3 параметра: Толщина непрерывный/пунктир цвет*/
+    box-shadow: 3px 3px 3px grey;  /*Тень от элемента. 3 координаты(длина и цвет)*/
+    border-radius: 10px; /*Радиус скругления границы*/ 
+    margin-top: 10px; /*Внутренний отступ сверху*/
+    background: url("1.jpg");/*Фоновое изображение. сокращение от background-image: ;*/
+  }
+  .head ul {
+    list-style:none; /*Удаление нумерации меню*/
+    margin:0; /*убираем внешний отступ*/
+    padding:0; /*убираем внутренний отступ*/
+  }
+  .head li {
+    border: 1px solid black; /*граница*/
+    border-radius: 6px; /*радиус скругления границы*/
+    display:inline-block; /*Размещаем список горизонтально для реализации меню*/
+    margin-right:2px; /*Добавляем отступ у пунктов меню*/
+	/*display:block; /*Коробочками один над другим*/ 
+	height: 37px; /*высота*/
+	margin: 5px 3px; /*внешний отступ*/
+  background-color: rgb(64, 165, 224);
+    text-align: center;
+    font-size: 18px;
+  }
+  .head a {
+    color: rgb(245, 236, 236); /*цвет текста*/
+    display: block; /*Коробочками один над другим*/
+    padding: 12px; /*внутренний отступ*/
+    text-decoration: none; /*стандартный шрифт*/
+}
+
+.head a:hover { /*псевдоклас для работы при наведении курсора*/
+    background:rgb(40, 10, 173);
+}
+
+.SiteAudioPlayer {
+    height: 780px;
+    background:white;
+    color: rgb(15, 68, 68);
+    margin: 6px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.SiteVideoPlayer {
+    height: 400px;
+    width: 400px;
+    color: rgb(3, 63, 63);  
+}
+#VideoPlayer {
+    width: 300px;
+    height: 300px;
+}
+.AudioPlayer {
+    width: 210px;
+}
+#Muzik {
+    text-align: center;
+    font-size: 20px;
+}
